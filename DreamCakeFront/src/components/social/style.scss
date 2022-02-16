@@ -1,0 +1,147 @@
+:root{
+	--reacc-bg: #dc3545;
+	--card-post-hover-bg: #7cd5d019;
+	--crearpost-bg: #fff;
+	--crearpost-bg-color:#9556cca3;
+	--crearpost-boder: #9556cc;
+	--input-label-bg:#7cd5d043 ;
+}
+.img-post{
+	position: relative;
+	bottom: 0%;
+	border-radius: 10px;
+	}
+.img-perfil{
+	width: 30px;
+}
+.fecha{
+	font-size:9px;
+	text-align: left;
+	margin:2px;
+}
+.comments{
+	text-align: center;
+	display: inline-block;
+	padding-top: 5px;
+}
+.item-comments{
+	text-align: left;
+}
+.likes{
+	display: inline-block;
+	width: 25px;
+}
+.enviar{
+	width: 10px;
+	height: 10px;
+	border-top: solid 0.1rem black;
+	border-right: solid 1px black;
+	transform: rotateZ(45deg) translateX(8px) translateY(2px);
+
+}
+//card
+.card-post{
+	border-radius: 10px;
+	margin:2rem auto;
+}
+//------reaccionesPOST-----
+.reacciones{
+	max-width: 40px;
+	margin: 0 0.5rem;
+}
+.reacciones:hover{
+	border-radius: 50%;
+	width: 110%;
+	transform: rotateZ(10deg);
+	transition: 0.3s;
+}
+.reaccionado{
+	background: var(--reacc-bg);
+}
+
+//------postear-----
+.crearPost{
+	position: fixed;
+	z-index: 1001;
+	margin-top: 1.5rem;
+	background: transparent;
+	border-radius: 10px;
+}
+.form-post{
+	padding: 1rem 0;
+	margin: 1rem 0;
+	border-radius: 5px;
+	border:solid 1px var(--color-outline);
+	
+}
+.data-post{
+	position: relative;
+	left:-8%;
+	text-align: center;
+	padding: 0 auto;
+}
+
+
+.postearImg{
+	position:fixed;
+	right:2rem;
+	top:1rem;
+	width: 200px;;
+
+}
+input[type="file"]{
+	display:none;
+}
+input+label{
+	padding: 5px;
+	margin:0;
+	//border:solid 1px #7cd5d0;
+	border-radius: 5px ;
+	background-color: transparent;
+	text-align: center;
+	font-family:"Montserrat",sans-serif ;
+}
+.foto{
+	width:24px;
+}
+//----------------carousel----------
+.bg-cake{
+	background-image: url('../../static/images/Background.png');
+	width: 31.8rem;
+	max-width: 35rem;
+	min-width: 10rem;
+	height: 22rem;
+	max-height: 25rem;
+	min-height: 10rem;
+	transition: 0.5s;
+	
+}
+.info-cake{
+	background-color:#00000031;
+	backdrop-filter: blur(3px);
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 2.5rem;
+	text-align: center;
+	height: 90%;
+	width: 80%;
+	margin:1rem auto;
+	border-radius: 3px;
+	
+}
+.btn-CrearPedido{
+	position: fixed;
+	top:80%;
+	right: 5%;
+	border-radius: 50%;
+	min-width: 12%;
+}
+
+@media only screen and (max-width: 750px) {
+	.crearPost{
+		position: static;
+		background-color: rgba(255, 255, 255, 0.722);
+		
+		min-height:7rem ;
+		border:solid 1px var(--color-outline);
+	}
+}

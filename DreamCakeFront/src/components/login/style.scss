@@ -1,0 +1,24 @@
+.modal-backdrop {
+  z-index: 0;
+}
+.modals{
+  background-color: var(--color-principal);
+
+}
+.modalText{
+
+  color:var(--color-outline);
+  font-weight: bold;
+  font-family: "Montserrat",sans-serif ;
+}
+
+.swal-button {
+  display: block;
+  background: rgb(122, 110, 3);
+}
+.swal-modal {
+  background-color: rgb(255, 253, 251);
+  border: 3px solid rgb(122, 110, 3);
+  height: fit-content;
+  
+ }

@@ -1,0 +1,129 @@
+:root{
+    --color-user-data:#00000095;
+    --colorLetra : white;
+ }
+
+// User Data
+.card{
+    border: none;
+}
+ .user_data{
+    background-color: #e85a101c;
+    background-size: 100% 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px var(--color-outline);
+    
+    
+ }
+
+.div_image{
+   display: inline-block;
+   padding: 30px;
+}
+
+.div_text{
+   display: inline-block;
+   padding: 30px;;
+}
+
+.user-name{
+    color:var(--color-principal);
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: var(--fontFamily);
+    width: 100%;
+    min-width: 10rem;
+    max-width: 100%;
+}
+
+.img_profile{
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 100%;
+}
+
+// div bottom
+.div-bottom{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+// Options
+.div_options{
+    padding-left: 5%;
+    min-width: 140px;
+    align-items: center;
+}
+
+// Information
+.div_information{
+    padding: 10px 5% 50px 50px;
+    height: inherit;
+    width: 80%;
+}
+
+// Account
+.div-account{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-weight: bold;
+    font-family: var(--fontFamily);
+    font-size: 19px;
+    color: var(--color-principal);
+}
+
+.field{
+    
+    text-justify: center;
+    font-family: var(--fontFamily);
+    font-size: 18px;
+    color: black;
+    
+}
+
+.btn-update{
+    width: 120px;
+    background-color: var(--colorBoton);
+    color: var(--colorLetra);
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 8px;
+}
+.btn-deleteCount{
+    width: 120px;
+    color: var(--colorBoton);
+    margin-top: 10px;
+    border:solid  1px var(--colorBoton);
+    border-radius: 8px;
+}
+.btn-options{
+    width: 140px;
+    background-color: var(--colorBoton);
+    color: var(--colorLetra);
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+
+
+
+
+// responsive
+@media only screen and (max-width: 600px) {
+    .div_image, .div_text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .div_options{
+        padding-left: 0px;
+    }
+  }

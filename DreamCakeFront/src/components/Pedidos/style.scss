@@ -1,0 +1,307 @@
+:root{
+    --color-pastel:#6610f200;
+    --color-pastel2:#6610f200;
+    --color-pastel3:#6610f200;
+    --textura-pastel:url("https://www.transparenttextures.com/patterns/wave-grid.png");//textura para la masa
+    --textura-pastel2:'';//textura para la cubierta
+    --zise-pastel:2.5em;
+    --zise-pastel2:2em;
+ }
+
+ .canvas{
+     border:solid 1px #000000;
+     width: 100%;
+     height: 250px;
+ }
+ .bandeja{
+    top:68%;
+    left:-0.5rem;
+    position: absolute;
+    border-radius: 50% ;
+    border-top:solid 1px;
+    border-bottom:solid 2px;
+    height: 4rem;
+    width: 100%;
+    background: #f6f7e8;
+ }
+ .pastelT{
+     position: absolute;
+     top: 12%;
+     left: 15%;
+     width: 10em;
+     height:var(--zise-pastel);
+     background-image: var(--textura-pastel);
+     border-radius:   80% ;
+     border-bottom: solid 1px;
+     transition: 0.5s;
+ }
+ 
+ .pastelCubierta1{
+    top:12%;
+    left:47%;
+    position: absolute;
+    width:5em;
+    height:1.25em;
+    background-color:var( --color-pastel);
+    background-image: var(--textura-pastel2);
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 0%;
+    transition: 0.5s;
+    }
+.pastelCubierta2{
+    top:12%;
+    left:15%;
+    position: absolute;
+    width:5em;
+    height:1.25em;
+    background-color:var( --color-pastel);
+    background-image: var(--textura-pastel2);
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 0%;
+    transition: 0.5s;
+    }
+.pastelCubierta3{
+    top:20.2%;
+    left:47%;
+    position: absolute;
+    width:5em;
+    height:1.25em;
+    background-color:var( --color-pastel);
+    background-image: var(--textura-pastel2);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 100% ;
+    border-bottom:solid 1px  #000;
+    transition: 0.5s;
+    }
+.pastelCubierta4{
+    position: absolute;
+    top: 21%;
+    left: 47%;
+    width: 5em;
+    height:8.7rem;
+    background-color:var( --color-pastel);
+    background-image: var(--textura-pastel2);
+    transition: 0.5s;
+    }
+.pastelCubierta5{
+    top:78%;
+    left:47%;
+    position: absolute;
+    width:5em;
+    height:1.25em;
+    background-color:var( --color-pastel);
+    background-image: var(--textura-pastel2);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 100%;
+    transition: 0.5s;
+    }
+
+ .pastel:hover ~ div{
+     --zise-pastel:3.4em;
+     --zise-pastel2:2.4em;
+ }
+ 
+ .pastel{
+     position: absolute;
+     top: 21.5%;
+     left: 15%;
+     width: 10em;
+     height:9.2rem;
+     background-image: var(--textura-pastel);
+     border-radius: 0 0 10% 10% ;
+     
+ }
+ .pastelB{
+     position:absolute;
+     top: 70%;
+     left: 15%;
+     width: 10em;
+     height:var(--zise-pastel);
+     background-color:var( --color-pastel);
+     background-image: var(--textura-pastel);
+     border-radius:   80% ;
+     border-bottom: solid 1px;
+     transition: 0.5s;
+     
+     
+ }
+ .pastelPadding{
+     padding-top: 80px;
+     padding-bottom: 110px;
+ }
+ 
+ .draw{
+     display:inline-block;
+     position: relative;
+     min-height: 15em;
+     min-width:7rem;
+     width: 250px;
+     margin-left: 2rem;
+     perspective: 500px;
+     perspective-origin: 150% -50% ;
+     transition: 1s;
+ }
+ .opciones{
+     text-align: center;
+     clear: both;
+ 
+ }
+ 
+ 
+ 
+ .pastelTtwo{
+     position: relative;
+     top: -6rem;
+     left: 12%;
+     width: 7.5em;
+     height:var(--zise-pastel2);
+     background-color:var( --color-pastel2);
+     border:none;
+ }
+
+ .pasteltwo{
+     position: absolute;
+     top: -5rem;
+     left: 12%;
+     width: 7.5em;
+     height:6.5rem;
+     background-color:var( --color-pastel2);
+    }
+ .pastelBtwo{
+     position:absolute;
+     top: 0%;
+     left: 12%;
+     width: 7.5em;
+     height:var(--zise-pastel2);
+     background-color:var( --color-pastel2);
+     border:none;
+     }
+ .pasteltwo:hover + div{
+      --zise-pastel2:2.4em;
+ }
+     
+
+
+
+ 
+
+//----------------------pastel Cuadrado------------------
+
+.bandejaCuadrada{
+    position:absolute;
+    top:45%;
+    left:15%;
+    transform: rotateX(90deg) translateZ(4rem);
+    width: 12rem;
+    height: 12rem;
+    transition: 1s;
+    background: #f6f7e8;
+    border-radius:5%;
+    border:solid 1px;
+    border-bottom:solid 2px;
+}
+.caraMasa{
+    position:absolute;
+    top:20%;
+    left:25%;
+    width: 8rem;
+    height: 6rem;
+    background-image: var(--textura-pastel);
+    transition: 1s;
+}
+.sideUp{
+    transform: rotateX(90deg) translateZ(4rem);
+    width: 8rem;
+    height: 8rem;
+    transition: 1s;
+}
+.sideFront{
+    transform: translateZ(4rem);
+}
+.sideRight{
+    transform:rotateY(90deg) translateZ(4rem);
+    background-color: var( --color-pastel);
+    border: solid var( --color-pastel);;
+}
+
+
+
+.caraRelleno{
+    position:absolute;
+    top:35%;
+    left:35%;
+    width: 4rem;
+    height: 3rem;
+    background-color:var( --color-pastel2);
+    transition: 1s;
+}
+.sideUpRelleno{
+    transform: rotateX(90deg) translateZ(2rem);
+    width: 4rem;
+    height: 4rem;
+    transition: 1s;
+}
+.sideFrontRelleno{
+    transform: translateZ(2rem);
+}
+.sideRightRelleno{
+    transform:rotateY(90deg) translateZ(2rem);
+}
+
+
+.cubiertaFront{
+    transform: translateZ(4rem);
+    height: 6rem;
+}
+.cubiertaUp{
+    transform: rotateX(90deg) translateZ(4rem);
+    height: 8rem;
+}
+.cubiertaUp2{
+    transform: rotateX(90deg)  translateZ(2rem) translateY(-2rem) translateX(-4rem);
+    height: 4rem;
+    
+}
+.cubierta{
+    position:absolute;
+    top:20%;
+    left:50.6%;
+    width: 4rem;
+    background-color: var( --color-pastel);
+    background-image: var(--textura-pastel2);
+    border: solid var( --color-pastel);
+    transition: 1s;
+
+}
+
+//------------Loader------------
+
+#boxLoader{
+    position: fixed;
+    top:40%;
+    left:50%;
+    width: 100px;
+    height: 100px;
+    background: rgba(29, 22, 22, 0.111);
+    visibility: hidden;
+}
+.loader{
+    position: absolute;
+    top:25%;
+    left:25%;
+    width: 50px;
+    height: 50px;
+    border: solid 3px rgba(129, 48, 48, 0.104);
+    border-top-color: rgb(72, 199, 180);
+    border-radius: 50%;
+    animation:  loader 1.2s linear infinite;
+    
+}
+@keyframes loader {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}

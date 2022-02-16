@@ -1,0 +1,111 @@
+.jumbotron-header{
+    background-color: #7cd5d0;
+    background-size: 100% 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    position:static;
+}
+
+.btn{
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-register{
+    background-color: #9556cc;
+    color: white;
+    padding: 10px 60px;
+    font-size: 15px;
+  }
+.btn-register:hover{
+    background-color:  #007bb6;
+    color: white;
+    padding: 13px 65px;
+  }
+.btn-login{
+    background-color: #7cd5d0;
+    color: white;
+    padding: 10px 60px;
+    font-size: 15px;
+    border: 1px solid #6dd3ce;
+}
+.btn-login:hover{
+    background-color:  #007bb6;
+    color: white; 
+    padding: 13px 63px;
+}
+.btn-start{
+    background-color: #9556cc;
+    color: white;
+    padding: 8px 130px;
+    font-size: 15px;
+    opacity: 1;
+    margin-top: 50px;
+   
+}
+.btn-start:hover{
+    background-color:  #007bb6;
+    color: white;
+    padding: 13px 150px;
+    
+}
+.img-logo {
+    padding: 1px;
+    width: 63px;
+  }
+.img-carousel{
+    padding: 1px;
+    width: 200px;
+}
+.carousel-item{
+    height: 30rem;
+    background:rgb(0, 0, 0);
+    color: white;
+    background-position:center;
+    background-size:auto;
+}
+.overlay-text{
+    
+    color: white;
+    position:absolute; 
+    top:100; 
+    Left:50;
+   
+    font-weight: lighter;
+}
+.normal-text{
+
+    color: #9556cc;
+    font-weight: bold;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+
+}
+.normal-img{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    width:150px;
+
+}
+.overlay-image{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+  

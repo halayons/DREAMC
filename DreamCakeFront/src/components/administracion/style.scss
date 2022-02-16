@@ -1,0 +1,53 @@
+:root{
+  --ver-bg:#30eb9d;
+  --side-bg:#f1f1f1;
+  --side-a: black;
+  --side-a-acti: #04AA6D;
+  --side-font: white;
+  --side-hover: #555;
+}
+
+.ver{
+    background: var(--ver-bg);
+    border-radius: 6px;
+    border: none;
+    height: 40px;
+    display: block;
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    padding-left:3%;
+  }
+
+  
+  
+  
+  .sidebar{
+    text-align: center;
+  }
+  
+ 
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  input[type=text], input[type=password],input[type=email]{
+    
+    display: block;
+    width: 100%;
+    
+  }
